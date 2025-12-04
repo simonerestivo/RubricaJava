@@ -1,0 +1,15 @@
+# Eclipse
+.classpath
+.project
+.settings/
+*.log
+
+# Java
+*.class
+bin/
+*.jar
+*.war
+*.zip
+
+# File
+informazioni.txt
