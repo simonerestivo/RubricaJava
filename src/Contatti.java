@@ -42,7 +42,7 @@ public class Contatti {
 	
 	//Metodo di rimozione contatto (rimozione tramite indice)
 	
-	public void rimuoviPersona(int i) {
+	public void eliminaPersona(int i) {
 		if( i >= 0 && i < persone.size()) {
 			persone.remove(i);
 		}

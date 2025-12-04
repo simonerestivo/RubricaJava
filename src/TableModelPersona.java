@@ -2,6 +2,12 @@ import javax.swing.table.AbstractTableModel;
 import java.util.Vector;
 
 public class TableModelPersona extends AbstractTableModel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
 	private Vector<Persona> persone;
 	private final String[] titoliColonne = {"Nome", "Cognome", "Indirizzo", "Telefono", "Eta'"};
 	

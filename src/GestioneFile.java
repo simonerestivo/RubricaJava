@@ -3,8 +3,8 @@ import java.util.Vector;
 import java.util.Scanner;
 
 public class GestioneFile {
-	private static final String NOME_FILE = "informazioni.txt";
 	
+	private static final String NOME_FILE = "informazioni.txt";
 	//Metodo per caricare contatti da file
 	
 	public static Vector<Persona> caricaDaFile() {
@@ -12,7 +12,9 @@ public class GestioneFile {
 		File file = new File(NOME_FILE);
 		
 		if(!file.exists()) {
+			System.out.println("FILE does not exist");
 			return persone;
+			
 		}
 		
 		try(Scanner scanner = new Scanner(file)){
