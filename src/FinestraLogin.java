@@ -77,9 +77,8 @@ public class FinestraLogin extends JFrame{
 		//Impostazioni di chiusura, dimensione e posizione
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				
-		setSize(300,125);
+		setSize(300,150);
 		setLocationRelativeTo(null);
-		setResizable(false);
 		setVisible(true);
 
 	}
