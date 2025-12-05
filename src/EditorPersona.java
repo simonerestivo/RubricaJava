@@ -5,12 +5,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.JToolBar;
 import javax.swing.SwingConstants;
 
 public class EditorPersona extends JDialog {
@@ -135,13 +137,30 @@ public class EditorPersona extends JDialog {
 			
 		});
 		
-		//Posizionamento bottoni
+		/*
+		//Posizionamento bottoni con JPanel
 		JPanel bottoni = new JPanel();
 		bottoni.setLayout(new FlowLayout());
 
 		bottoni.add(salva);
 		bottoni.add(annulla);
 		add(bottoni, BorderLayout.PAGE_END);	
+		*/
+		
+		//Posizionamento bottoni con JToolBar
+		JToolBar strumenti = new JToolBar("Barra degli strumenti");
+		strumenti.setFloatable(false);
+	
+		salva.setIcon(new ImageIcon(getClass().getResource("/icons/salva.png")));
+		salva.setToolTipText("Salva Contatto");
+		
+		annulla.setIcon(new ImageIcon(getClass().getResource("/icons/annulla.png")));
+		annulla.setToolTipText("Annulla");
+		
+
+		strumenti.add(salva);
+		strumenti.add(annulla);
+		add(strumenti, BorderLayout.NORTH);
 		
 		//Impostazione dimensione e posizione
 		setSize(600,250);

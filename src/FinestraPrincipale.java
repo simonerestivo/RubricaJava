@@ -73,8 +73,8 @@ public class FinestraPrincipale  extends JFrame{
 			
 		});
 		
-		
-		//Posizionamento bottoni
+		/*
+		//Posizionamento bottoni con JPanel
 		JPanel bottoni = new JPanel();
 		bottoni.setLayout(new FlowLayout());
 
@@ -82,8 +82,26 @@ public class FinestraPrincipale  extends JFrame{
 		bottoni.add(modifica);
 		bottoni.add(elimina);
 		add(bottoni, BorderLayout.PAGE_END);
+		*/
 		
+		
+		//Posizionamento bottoni con JToolBar
+		JToolBar strumenti = new JToolBar("Barra degli strumenti");
+		strumenti.setFloatable(false);
+	
+		nuovo.setIcon(new ImageIcon(getClass().getResource("/icons/nuovo.png")));
+		nuovo.setToolTipText("Aggiungi Contatto");
+		
+		modifica.setIcon(new ImageIcon(getClass().getResource("/icons/modifica.png")));
+		modifica.setToolTipText("Modifica Contatto");
+		
+		elimina.setIcon(new ImageIcon(getClass().getResource("/icons/elimina.png")));
+		elimina.setToolTipText("Elimina Contatto");
 
+		strumenti.add(nuovo);
+		strumenti.add(modifica);
+		strumenti.add(elimina);
+		add(strumenti, BorderLayout.NORTH);
 		
 		//Impostazioni di chiusura, dimensione e posizione
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
