@@ -96,8 +96,8 @@ public class FinestraLogin extends JFrame{
 			new FinestraPrincipale();
 		} else {
 			//login fallito
-			JOptionPane.showMessageDialog(this, "Credenziali errate", 
-                    "Errore Login", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Login errato", 
+                    "Credenziali non valide", JOptionPane.ERROR_MESSAGE);
 			
 			password.setText("");
 		}
