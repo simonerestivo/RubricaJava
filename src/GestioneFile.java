@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class GestioneFile {
 	
 	private static final String NOME_FILE = "informazioni.txt";
-	//Metodo per caricare contatti da file
 	
+	//Metodo per caricare contatti da file
 	public static Vector<Persona> caricaDaFile() {
 		Vector<Persona> persone = new Vector<>();
 		File file = new File(NOME_FILE);
@@ -57,7 +57,6 @@ public class GestioneFile {
 	}
 	
 	//Metodo per salvare su file i contatti (sovrascrive il file)
-	
 	public static void salvaSuFile(Vector<Persona> persone) {
 		try(PrintStream printstream = new PrintStream(NOME_FILE)){
 			for(Persona p : persone) {

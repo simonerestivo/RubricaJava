@@ -9,7 +9,7 @@ public class TableModelPersona extends AbstractTableModel{
 	
 	
 	private Vector<Persona> persone;
-	private final String[] titoliColonne = {"Nome", "Cognome", "Indirizzo", "Telefono", "Eta'"};
+	private final String[] titoliColonne = {"Nome", "Cognome", "Telefono"};
 	
 	//Costruttore
 	
@@ -42,9 +42,7 @@ public class TableModelPersona extends AbstractTableModel{
 		switch (col) {
 			case 0: return p.getNome();
 			case 1: return p.getCognome();
-			case 2: return p.getIndirizzo();
-			case 3: return p.getTelefono();
-			case 4: return p.getEta();
+			case 2: return p.getTelefono();
 			default: return null;
 		}
 	}
