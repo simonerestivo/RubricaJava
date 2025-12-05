@@ -1,5 +1,3 @@
-
-
 public class Utente {
 	private String username;
 	private String password;
