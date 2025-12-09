@@ -13,4 +13,5 @@ Versione base dell'applicazione:
 Versione aggiornata dell'applicazione:
 * **Miglioramento Interfaccia:** Aggiunta di barra degli strumenti e icone.
 * **Gestione Utenti:** Aggiunta di sistema utenti con username e password.
+(Se il file utenti non é stato creato, viene creato un utente base con username "admin" e password "password".
 * **Aggiornamento persistenza:** Salvataggio e caricamento dati su cartella "informazioni", un file per ogni contatto. 
